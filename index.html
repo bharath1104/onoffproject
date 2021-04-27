@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta  name="viewport" content="width=device-weidth,initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	<style type="text/css">
+		
+			
+			
+		
+			img{
+
+			height: 400px;
+		}
+
+        .button {
+								border-radius: 20px;
+						 		color: white;
+						  		padding: 16px 32px;
+						 		text-align: center;
+						 		text-decoration: none;
+						  		display: inline-block;
+						  		font-size: 16px;
+
+						  		margin-: 4px 2px;
+						  		transition-duration: 0.4s;
+						 		cursor: pointer;
+					        }
+
+					.button1 {
+					  background-color: white; 
+					  color: black; 
+					  border: 2px solid #4CAF50;
+					}
+
+					.button1:hover {
+					  background-color: #4CAF50;
+					  color: white;
+					  box-shadow: 
+					}
+
+					.button2 {
+					  background-color: white; 
+					  color: black; 
+					  border: 2px solid #008CBA;
+					}
+
+					.button2:hover {
+					  background-color: #008CBA;
+					  color: white;
+					}
+					.middle{
+					    margin: 0;
+					    position:  absolute; 
+					    top: 50%;
+	   				    left: 38%;
+
+					}	
+					
+					
+					h1{
+						text-align: center;
+						font-family: 'Libre Baskerville', serif;
+						font-size: 3vw;	
+					}
+					p{
+						font-size: 100%;
+						text-align: right;
+						font-family: 'Dancing Script', cursive;
+					}
+
+					@media screen and (max-width:800px) {
+                    .button1{
+                    display:block;
+                    margin:0.4px auto;
+
+                    }
+                   h1{
+                   	display: block;
+                   	margin: 0.4px auto;
+                   	font-size: 22px;
+
+                       }
+                       p{
+                       	display: block;	
+                     	margin: 0.4px auto;
+                     	font-size: 20px;
+                     	font-family: 'Dancing Script', cursive;
+
+					}
+		</style>
+
+<script type="text/javascript">
+	function light(value)
+	{
+		var pic;
+		   if(value == 0)
+		   { 
+			  pic="light-off.jpg";
+	       }
+		   else
+		   {
+		   		pic="light-on.jpg";
+		   }
+		   	document.getElementById('bulb').src=pic;
+	}
+</script>.
+<h1><i>BULB ON / OFF</i></h1>
+<img id="bulb" src="light-off.jpg">
+
+<br>
+<div class="middle">
+   <button class="button button1" onclick="light(1)"><b>ON</b></button>
+   <button class="button button2" onclick="light(0)"><b>OFF</b></button>
+</div>
+<p>~Bharath Varma~</p>
+</body>
+</html>
